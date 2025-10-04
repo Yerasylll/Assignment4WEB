@@ -1,0 +1,52 @@
+:root{
+    --bg:#fff;
+    --card:#f7f9ff;
+    --accent:#1d2b6f;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:#eef1fc;
+    margin:0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color:var(--accent);
+    padding:18px;
+  }
+  .wrap{ max-width:1000px; margin:0 auto; }
+  
+  h1{ text-align:center; margin-bottom:18px; }
+  
+  /* Boxes container (mobile-first: stacked) */
+  .boxes{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .box{
+    background:var(--card);
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 6px 14px rgba(29,43,111,0.06);
+    border-left:6px solid #d9e2ff;
+  }
+  
+  /* Tablet: two in a row */
+  @media (min-width:601px) and (max-width:992px){
+    .boxes{
+      flex-direction:row;
+      flex-wrap:wrap;
+    }
+    .box{
+      flex: 0 0 calc(50% - 14px);
+    }
+  }
+  
+  /* Desktop: three in a row */
+  @media (min-width:993px){
+    .boxes{
+      flex-direction:row;
+    }
+    .box{
+      flex:1 1 0;
+      margin:0;
+    }
+  }

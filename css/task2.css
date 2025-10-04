@@ -1,0 +1,11 @@
+body{ font-family: "Segoe UI", Arial, sans-serif; background:#fafcff; color:#142041; }
+h1{ font-weight:700; }
+.feature.card{
+  border: none;
+  border-radius:12px;
+  box-shadow: 0 8px 20px rgba(20,32,65,0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.feature.card:hover{ transform: translateY(-6px); box-shadow:0 14px 30px rgba(20,32,65,0.08); }
+.card-title{ margin-bottom:8px; font-size:1.15rem; }
+.card-text{ color:#333; }

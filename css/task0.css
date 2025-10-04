@@ -1,0 +1,58 @@
+:root{
+    --bg: #f4f4f7;
+    --accent: #2b3a67; /* deep blue */
+    --muted: #555;
+  }
+  
+  /* Base styles */
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--accent);
+    line-height:1.45;
+    padding:20px;
+  }
+  .container{
+    max-width:1000px;
+    margin:0 auto;
+  }
+  
+  /* Hero */
+  .hero{
+    text-align:center;
+    padding:28px 12px;
+    background:linear-gradient(180deg,#ffffff, #eef2ff);
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(43,58,103,0.06);
+  }
+  .lead{ color:var(--muted); margin-top:8px;}
+  
+  /* Headings scaling (mobile first) */
+  h1{
+    font-weight:700;
+    font-size:28px; /* mobile */
+    margin:0;
+  }
+  h2{
+    font-size:20px;
+    margin-top:20px;
+  }
+  
+  /* Paragraphs */
+  p{ font-size:15px; color: #333; }
+  
+  /* Tablet */
+  @media (min-width: 601px) and (max-width: 992px) {
+    h1{ font-size:36px; }
+    h2{ font-size:22px; }
+    p{ font-size:16px; }
+  }
+  
+  /* Desktop */
+  @media (min-width: 993px) {
+    h1{ font-size:48px; }
+    h2{ font-size:26px; }
+    p{ font-size:18px; }
+  }
